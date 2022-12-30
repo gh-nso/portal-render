@@ -9,6 +9,6 @@ push:
 	docker push $(IMAGE_NAME):$(VERSION)
 
 run:
-	docker run --rm --init -it -p 8080:8080 $(IMAGE_NAME):$(VERSION)
+	docker run --rm --init -it -p 80:8080 $(IMAGE_NAME):$(VERSION)
 
 all: image push

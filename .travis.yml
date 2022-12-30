@@ -10,5 +10,5 @@ branches:
 script:
   - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
   - make all VERSION=8.1-latest
-  - docker tag portal/docker-php-webapp:8.1-latest portal/docker-php-webapp:latest
-  - docker push portal/docker-php-webapp:latest
+  - docker tag roquie/docker-php-webapp:8.1-latest roquie/docker-php-webapp:latest
+  - docker push roquie/docker-php-webapp:latest
